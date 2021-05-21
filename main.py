@@ -88,7 +88,7 @@ def auth():
 
     return jsonify(token=_get_jwt(user_data).decode("utf-8"))
 
-
+# ADD THIS TO TRIGGER BUILD
 @APP.route("/contents", methods=["GET"])
 def decode_jwt():
     """
